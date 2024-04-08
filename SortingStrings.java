@@ -18,6 +18,8 @@ public class SortingStrings
             strings[i] = kb.next();
         } // end of for
 
+        kb.close();
+
         // sow sorting the array
         Arrays.sort(strings);
 
