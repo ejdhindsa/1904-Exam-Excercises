@@ -1,4 +1,4 @@
-public class SnowExceedingOneInch 
+public class HighestAmountOfSnow
 {
     public static void main(String[] args)
     {
@@ -29,25 +29,35 @@ public class SnowExceedingOneInch
         String[] months = {"January", "February", "March", "April", "May", "June", "July", "August",
         "September", "October", "November", "December"} ;
 
-        // now creating a for loop that tells only the times in which there
-        // was more than 1 inches of snowfall in the city of denver
-        System.out.println("Name of months with higher snowfall than one inches:");
-        
+        // creating a variable to settle the highest inches value
+        double max = (double) Integer.MIN_VALUE;
+        int year = 0;
+        String month = null;
+
+        // starting a for loop that will keep in check the highest highest
+        // snowfall inches in denver
         for (int i = 0; i < snowFallInInches.length; i++)
         {
             for (int j = 0; j < snowFallInInches[i].length; j++)
             {
-                // starting an if conditional that will only run if snowfall is more
-                // than one inches
-                if (snowFallInInches[i][j] >= 1.0 )
+                // starting an if clause to also check for the year as well as
+                // the month with highest amount of snowfall
+                if (snowFallInInches[i][j] > max)
                 {
-                    System.out.println(months[j] + " " + years[i] + "- " + snowFallInInches[i][j] + " inches.");
-                } // end of if
-                
-            }// end of inner for loop
-            
-        } // end of outer loop
+                    year = years[i];
+                    month = months[j];
 
-    } // end of main
-    
-} // end of class
+                } // end of conditional if
+
+                // using math.max to check for the highest values between the two
+                // passed arguments
+                max = Math.max(snowFallInInches[i][j], max);
+                
+            } // end of outer for loop
+
+        } // end of outer for loop
+
+        System.out.println("Highest Snowfall ever recorded: " + max + " inches in " + month + " " + year);
+    } // end of class
+
+} // end of main
