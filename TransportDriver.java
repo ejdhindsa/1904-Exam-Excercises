@@ -6,17 +6,17 @@ public class TransportDriver
     public static void main (String[] args)
     {
         // creating passengers
-        Passenger p1 = new Person("Ekam");
-        Passenger p2 = new Person("Anmol");
-        Passenger p3 = new Person("Gurvir");
-        Passenger p4 = new Person("Khuswant");
+        Passenger p1 = new Person("Ekam", 2003);
+        Passenger p2 = new Person("Anmol", 2008);
+        Passenger p3 = new Person("Gurvir", 1975);
+        Passenger p4 = new Person("Khuswant", 1978);
         
         // array of person
         Passenger p[] = {
-            new Person("Bruce"),
-            new Person("Thomas"),
-            new Person("Martha"),
-            new Person("Alfred")
+            new Person("Bruce", 1980),
+            new Person("Thomas", 1950),
+            new Person("Martha", 1955),
+            new Person("Alfred", 1940)
         }; // end of p[]
         
         // creating a bus

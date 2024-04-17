@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.4.1" class="java.beans.XMLDecoder">
+ <object class="Person">
+  <void property="name">
+   <string>Ekam</string>
+  </void>
+  <void property="yearBorn">
+   <int>2003</int>
+  </void>
+ </object>
+ <object class="Person">
+  <void property="name">
+   <string>Anmol</string>
+  </void>
+  <void property="yearBorn">
+   <int>2008</int>
+  </void>
+ </object>
+ <object class="Person">
+  <void property="name">
+   <string>Gurvir</string>
+  </void>
+  <void property="yearBorn">
+   <int>1975</int>
+  </void>
+ </object>
+ <object class="Person">
+  <void property="name">
+   <string>Khuswant</string>
+  </void>
+  <void property="yearBorn">
+   <int>1978</int>
+  </void>
+ </object>
+</java>
