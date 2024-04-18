@@ -1,33 +1,16 @@
-
-/**
- * Write a description of class InvalidNumberException here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class InvalidNumberException
+public class InvalidNumberException extends Exception
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class InvalidNumberException
-     */
-    public InvalidNumberException()
+    // fields
+    private String number;
+    
+    public InvalidNumberException(String number)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+        this.number = number;
+    } // end of constructor
+    
+    public String getNumber()
     {
-        // put your code here
-        return x + y;
-    }
-}
+        return this.number;
+    } // end of getNumber
+    
+} // end of class
